@@ -24,8 +24,7 @@ class Box {
 
 	public void draw() { // 박스 그리는 메소드
 		///////////// 여기에서 구현하세요.
-		System.out.println(*fillChar);
-		
+		System.out.println(width*height*);
 
 	}// end draw()
 
@@ -41,6 +40,7 @@ public class Prob03_class {
 	public static void main(String[] args) {
 		//여기를  구현하세요.
 		Box b1=new Box(10,1);
+		b1.fill('%');
 		b1.draw();
 		
 
