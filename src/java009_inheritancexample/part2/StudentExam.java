@@ -9,7 +9,7 @@ public class StudentExam extends Human {
 	}
 	
 	
-	public StudentExam(String name, int age, int height, int weight) {
+	public StudentExam(String name, int age, int height, int weight ,String hak) {
 		super(name,age,height,weight);
 		this.hak=hak;
 	
@@ -18,7 +18,9 @@ public class StudentExam extends Human {
 	
 	@Override
 	public String toString() {
-		return String.format("%s,%d,%d,%d,%s\n",name,age,height,weight,hak);
+		String data = name + "\t" + age + "\t" + height + "\t" + weight+"\t"+ hak;
+		return data;
+		
 	}
 
  

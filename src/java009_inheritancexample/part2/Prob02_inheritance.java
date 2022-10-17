@@ -7,7 +7,7 @@ package java009_inheritancexample.part2;
  1 Human 클래스를 상속 받은 StudentExam 클래스를 구현하시오.
  2 3개의 StudentExam 객체를 생성 하여 배열에 셋팅 한 후 각각의 
    객체의 나이, 신장 출력 한다.
-
+	
  [출력결과]
  name	나이	신장	 몸무게	학번
  홍길동	15	171	 81	   201101

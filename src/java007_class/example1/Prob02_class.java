@@ -32,23 +32,18 @@ public class Prob02_class {
 
 	public static void display(SalesGrade[] sg) {
 		for(int i=0;i<sg.length;i++) {
-			System.out.printf("%d %d %c\n",sg[i].losal,sg[i].hisal,sg[i].grade);
-		}
-		
+		System.out.println(sg[i].toString());
+		} System.out.println();
 
 	}// end display()
 
 	public static void display(SalesGrade[] sg, String name, int sales) {
 		// 사원의 연봉등급을 출력하는 로직구현
-		
-	if(sales>=1000) {
-		System.out.println('A');
-	}else if(sales>=2001) {
-		System.out.println('B');
-	}else if(sales>=3001) {
-		System.out.println('C');	
-		}else {System.out.println('D');}
-
+		for(int i=0;i<sg.length;i++) {
+			if(sales <=sg[i].hisal && sales>=sg[i].losal) {
+				System.out.printf("%s님의 연봉은 %s등급입니다.",name,sg[i].grade);
+			}
+		}
 	}// end display()
 
 }// end class

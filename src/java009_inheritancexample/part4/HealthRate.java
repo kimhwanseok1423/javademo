@@ -14,17 +14,19 @@ public class HealthRate extends Health {
 
 	private String rateCheck() {
 		// 비만도를 로직구현을 구현하세요
-		 B=((weight-standardHealth())/standardHealth()*100);
-       if(B>=20) {
-    	   System.out.println("비만");
-       } else if(B>=10) {
-    		   System.out.println("과제충");
-       }else {System.out.println("정상");
+		double B=(weight-standardHealth())/standardHealth()*100;
+       if(B<=10) 
+    	   return "정상";
+    	  
+        else if(B>=10 && B<20) 
+    		   return "과체중";
+       else 
+    	   return "비만";
        }
     	    
        
-		return B;
-	}
+		
+	
 
 	// prn()메소드 오버라이딩
 	@Override
