@@ -9,6 +9,8 @@ package java011_casting.example2;
  * hong		 2350000	 100000		  352500
  */
 
+import java007_class.example4.Employee;
+
 public class Prob002_binding {
 	public static void main(String[] args) {
 		Employee[] em = new Employee[] { new Engineer("kim", 1200000), new Developer("lee", 1750000),
@@ -20,6 +22,11 @@ public class Prob002_binding {
 		System.out.println("=============================================");
 
 		//////////////////////////////////////
-
+		for (Employee ob : em) {
+			if (ob instanceof Engineer)
+				System.out.println(ob.toString() + "\t" + (int)ob.salary * 0.13);
+			else if (ob instanceof Developer)
+				System.out.println(ob.toString() + "\t" + (int)ob.salary * 0.15);
+	}
 	}
 }
