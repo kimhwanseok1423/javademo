@@ -20,12 +20,14 @@ public class Prob001_String {
 	private static Product createProduct(String message) {
 		//매개변수로 들어온 문자열을 적절히 이용하여 
 		//Product 객체를 생성후 리턴하는createProduct() 메서드를 구현하시오. 
-		String data1="";
-             String[]data=message.split("**");
-         	for(int i=0;i<message.length();i++) {
-         	data1+=(char)(message.charAt(i));
-             
-		return data;
+	String [] data=message.split("\\*{2}");
+	Product pd=new Product();
+	pd.setProductId(data[0]);
+	pd.setMaker(data[1]);
+	pd.setName(data[2]);
+	pd.setAmount(Integer.parseInt(data[3]));
+	pd.setPrice(Integer.parseInt(data[4]));
+		return pd;
 	}// end creatProduct
 }// end class
 
