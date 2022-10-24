@@ -28,8 +28,7 @@ public class java164_stream {
 		y=sc.nextInt();
 		System.out.printf("%d + %d=%d\n",x,y,x+y);
 		sc.close();
-		
-		
+	
 	}
 
 }
